@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project(stbidespeckle)
+add_compile_options(-O3)
+include_directories(src)
+add_executable(stbidespeckle src/stbidespeckle.c src/dependencies.c)
+target_link_libraries(stbidespeckle m)

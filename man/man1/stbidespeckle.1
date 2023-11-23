@@ -1,0 +1,38 @@
+.TH "StbIDespeckle" 1 1.0 "23 Now 2023" "User Manual"
+
+.SH NAME
+stbidespeckle
+
+.SH DESCRIPTION
+Stb Image Despeckle.
+
+.SH SYNOPSIS
+stbidespeckle [options] image_in image_out.png
+
+.SH OPTIONS
+.TP
+-c N.N
+coef (default 0.250000)
+.TP
+-r NUM
+radius (default 5)
+.TP
+-h
+show this help message and exit
+
+.SH EXAMPLE
+stbidespeckle lena.png lena.despeckle.png 
+
+ Load: lena.png
+ image: 512x512:3
+ Despeckle 5 0.250000
+ Save png: lena.despeckle.png
+
+.SH COPYRIGHT
+This is free and unencumbered software released into the public domain.
+
+.SH SEE ALSO
+convert(1), gm(1), imagew(1)
+
+.SH CONTACTS
+Website: https://github.com/ImageProcessing-ElectronicPublications/stbiscalenx
